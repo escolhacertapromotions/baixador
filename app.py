@@ -36,6 +36,8 @@ def index():
 
                 with yt_dlp.YoutubeDL(ydl_opts) as ydl:
                     ydl.download([url])
+if __name__ == "__main__":
+    app.run(host='0.0.0.0', port=10000)
 
                 nome_arquivo = [f for f in os.listdir() if f.startswith('download.')][0]
                 return send_file(nome_arquivo, as_attachment=True)
