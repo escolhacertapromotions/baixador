@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <title>Baixador de YouTube</title>
+</head>
+<body>
+    <h1>Baixador YouTube (MP3 & MP4)</h1>
+    <form method="POST">
+        <input type="text" name="url" placeholder="Cole a URL aqui" required size="60"><br><br>
+        <label>
+            <input type="radio" name="formato" value="mp3" checked> MP3
+        </label>
+        <label>
+            <input type="radio" name="formato" value="mp4"> MP4
+        </label><br><br>
+        <button type="submit">Baixar</button>
+    </form>
+    <p>{{ mensagem }}</p>
+</body>
+</html>
